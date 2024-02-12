@@ -2,33 +2,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <form action="index.php" method="post">
-        <ul>
-            <li class="button">
-                <input type="button">7</input>
-                <input type="button">8</input>
-                <input type="button">9</input>
-            </li>
-            <li class="button">
-                <input type="button">4</input>
-                <input type="button">5</input>
-                <input type="button">6</input>
-            </li>
-            <li class="button">
-                <input type="button">1</input>
-                <input type="button">2</input>
-                <input type="button">3</input>
-            </li>
-            <li class="button">
-                <input type="button">+/-</input>
-                <input type="button">0</input>
-                <input type="button">,</input>s
-            </li>
-        </ul>
-    </form>
+        <div class="calculator-div">
+            <ul class="buttons-div">
+                <li class="result">
+                    <label for="equals"><input id="equals" name="equals" type="text" value="0" readonly></label>
+                </li>
+                <li class="buttons-line">
+                    <label for="CE"><input id="CE" type="submit" name="CE" value="CE"></label>
+                    <label for="C"><input id="C" type="submit" name="C" value="C"></label>
+                    <label for="Del"><input id="Del" type="submit" name="Del" value="Del"></label>
+                    <label for="/"><input id="/" type="submit" name="operator" value="/"></label>
+                </li>
+                <li class="buttons-line">
+                    <label for="7"><input id="7" type="submit" name="value" value="7"></label>
+                    <label for="8"><input id="8" type="submit" name="value" value="8"></label>
+                    <label for="9"><input id="9" type="submit" name="value" value="9"></label>
+                    <label for="*"><input id="*" type="submit" name="operator" value="*"></label>
+                </li>
+                <li class="buttons-line">
+                    <label for="4"><input id="4" type="submit" name="value" value="4"></label>
+                    <label for="5"><input id="5" type="submit" name="value" value="5"></label>
+                    <label for="6"><input id="6" type="submit" name="value" value="6"></label>
+                    <label for="-"><input id="-" type="submit" name="operator" value="-"></label>
+                </li>
+                <li class="buttons-line">
+                    <label for="1"><input id="1" type="submit" name="value" value="1"></label>
+                    <label for="2"><input id="2" type="submit" name="value" value="2"></label>
+                    <label for="3"><input id="3" type="submit" name="value" value="3"></label>
+                    <label for="+"><input id="+" type="submit" name="operator" value="+"></label>
+                </li>
+                <li class="buttons-line">
+                    <label for="neg"><input id="neg" type="submit" name="neg" value="+/-"></label>
+                    <label for="0"><input id="0" type="submit" name="value" value="0"></label>
+                    <label for="decimal"><input id="decimal" type="submit" name="decimal" value=","></label>
+                    <label for="="><input id="=" type="submit" name="equals" value="="></label>
+                </li>
+            </ul>
+
+            <input type="hidden" id="beforeOperator" name="fullExpression" value="">
+            <input type="hidden" id="afterOperator" name="fullExpression" value="">
+
+        </div>
+    </form>    
 </body>
 </html>
