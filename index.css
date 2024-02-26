@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(163, 159, 159);
+    margin-top:7.5%;
+
+}
+
+.calc{
+    margin:auto;
+    background-color: rgb(126, 126, 126);
+    border: 2px solid whitesmoke;
+    width: 24%;
+    height: 630px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px;
+}
+.form{
+    display: block;
+    text-align: center;
+}
+.maininput{
+    background-color: rgb(110, 110, 110);
+    border: 1px solid grey;
+    height: 125px;
+    width: 98.2%;
+    font-size: 80px;
+    color: whitesmoke;
+    font-weight: 00;
+}
+.numbtn{
+    padding: 30px 35px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: large;
+    background-color: rgb(155, 154, 154);
+}
+.numbtn:hover{
+    background-color: rgb(136, 133, 133);
+    color: whitesmoke;
+}
+.calbtn{
+    padding: 30px 35px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 30px;
+    background-color: orange;
+}
+.calbtn:hover{
+    background-color: rgb(211, 140, 7);
+    color: whitesmoke;
+}
+.c{
+    padding: 30px 35px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: large;
+    background-color: rgb(155, 154, 154);
+}
+.c:hover{
+    background-color: rgb(136, 133, 133);
+    color: whitesmoke;
+}
+.equal{
+    padding: 30px 35px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: large;
+    background-color: rgb(155, 154, 154);
+}
+.equal:hover{
+    background-color: rgb(136, 133, 133);
+    color: whitesmoke;
+}
